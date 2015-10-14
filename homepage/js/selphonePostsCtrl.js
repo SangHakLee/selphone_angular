@@ -2,9 +2,15 @@
 
 app.controller('selphonePostsCtrl', ['$scope', '$http', '$rootScope', 'selphonePostsFactory',  function($scope, $http, $rootScope, selphonePostsFactory){
 	
-	selphonePostsFactory.getSelphonePosts(function(results){
-		console.log('results', results)		
-	});
+	console.log('selphonePostsFactory.selphonePosts', selphonePostsFactory.selphonePosts)
+
+	if(!selphonePostsFactory.selphonePosts){
+// 		console.log('가져와야지')
+		selphonePostsFactory.getSelphonePosts(function(results){
+			console.log('results', results)		
+		});
+	}
+
 
     
     //테스트
