@@ -1,7 +1,7 @@
 'use strict';
 
 // app.controller('loginModalCtrl', ['$scope', '$uibModal', function($scope, $uibModal){
-app.controller('loginModalCtrl', ['$scope', 'ngDialog', function($scope, ngDialog){
+app.controller('loginModalCtrl', ['$scope', 'ngDialog', function($scope, ngDialog){ // 세가지 sns 로그인 버튼 있는 모달 띄우기
 	
 /*
 	$scope.clickLoginBtn = function(){
@@ -27,35 +27,28 @@ app.controller('loginModalCtrl', ['$scope', 'ngDialog', function($scope, ngDialo
 }]);
 
 
-app.controller('loginCtrl', ['$scope', '$window', function($scope, $window){
+app.controller('loginCtrl', ['$scope', '$window', '$compile', '$element',  function($scope, $window, $compile, $element){  
 	
-	$scope.a = function(){
-		cosole.log('aaa')
-	}
+
 	$scope.loginWithKakaoBtn = function(){
-// 		alert('aaa')
-		$window.open('../views/loginKakao.html', '_blank', 'width=500,height=400', function(){
-
-
-		});
+		$scope.window = $window.open('../views/loginKakao.html', '_blank', 'width=500,height=400');
 
 	}
+	
+	
+	
+	$scope.loginWithGoogleBtn = function(){
+		$window.open('../views/loginGoogle.html', '_blank', 'width=500,height=400');
+	}
+	$scope.loginWithNaverBtn = function(){
 
+		$window.open('../views/loginNaver.html', '_blank', 'width=500,height=400');
+	}
 }]);
 
 app.controller('loginKakaoCtrl', ['$scope', '$rootScope', function($scope, $rootScope){
 	
-	$scope.a = function(){
-		cosole.log('aaa')
-	}
-	$scope.loginWithKakaoBtn = function(){
-// 		alert('aaa')
-		$window.open('../views/loginKakao.html', '_blank', 'width=500,height=400', function(){
 
-
-		});
-
-	}
 
 }]);
 
