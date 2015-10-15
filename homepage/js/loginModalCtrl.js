@@ -2,7 +2,7 @@
 
 // app.controller('loginModalCtrl', ['$scope', '$uibModal', function($scope, $uibModal){
 app.controller('loginModalCtrl', ['$scope', 'ngDialog', function($scope, ngDialog){ // 세가지 sns 로그인 버튼 있는 모달 띄우기
-	
+	console.log('loginModalCtrl');
 /*
 	$scope.clickLoginBtn = function(){
 		var modalInstance = $uibModal.open({
@@ -28,7 +28,7 @@ app.controller('loginModalCtrl', ['$scope', 'ngDialog', function($scope, ngDialo
 
 
 app.controller('loginCtrl', ['$scope', '$window', '$compile', '$element',  function($scope, $window, $compile, $element){  
-	
+	console.log('loginCtrl');
 
 	$scope.loginWithKakaoBtn = function(){
 		$scope.window = $window.open('../views/loginKakao.html', '_blank', 'width=500,height=400');
@@ -46,11 +46,7 @@ app.controller('loginCtrl', ['$scope', '$window', '$compile', '$element',  funct
 	}
 }]);
 
-app.controller('loginKakaoCtrl', ['$scope', '$rootScope', function($scope, $rootScope){
-	
 
-
-}]);
 
 /*
 app.controller('ModalInstanceCtrl', function ($scope, $modalInstance) {

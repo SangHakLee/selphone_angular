@@ -1,7 +1,7 @@
 'use strict';
 
 app.controller('selphonePostsCtrl', ['$scope', '$http', '$rootScope', 'selphonePostsFactory',  function($scope, $http, $rootScope, selphonePostsFactory){
-	
+console.log('selphonePostsCtrl');
 var selphonePosts = {} // 셀폰 보증폰 정보가 담길 객체 선언
 
 	if(!selphonePostsFactory.selphone_posts){
@@ -10,7 +10,6 @@ var selphonePosts = {} // 셀폰 보증폰 정보가 담길 객체 선언
 			results = results.results;
 			console.log('results', results);
 			$scope.selphone_posts = results;
-			$scope.test = "test!!!";
 			// angular.forEach(results, function(value , key) {
    //      console.log(value+"--"+key)
    //    })
