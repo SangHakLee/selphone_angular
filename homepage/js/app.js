@@ -2,7 +2,7 @@
 var DEV_HOST = "http://54.178.140.51"
 var PRD_HOST = "http://api.selphone.co.kr"
 var url = DEV_HOST;
-var app = angular.module('selphoneApp', ['ngRoute', 'ngCookies', 'ngDialog']);
+var app = angular.module('selphoneApp', ['ngRoute', 'ngCookies', 'ngDialog', 'ui.bootstrap']);
 
 
 app.config(function($routeProvider) {

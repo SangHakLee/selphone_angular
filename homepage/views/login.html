@@ -1,8 +1,8 @@
-<link href="./homepage/css/bootstrap.min.css" rel="stylesheet">
-<script src="./homepage/js/bootstrap.js"></script>
+
 
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
 <script src="https://apis.google.com/js/api:client.js"></script>
+
 
 <style type="text/css">
     #customBtn {
@@ -42,32 +42,33 @@
 <!-- 로그인 modal -->
 
 <div data-ng-controller="loginCtrl">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h4 class="modal-title">로그인</h4>
-        </div>
-        <div class="modal-body">
-            <div style="text-align:center">
-                <!-- <a href="javascript:loginWithKakao()" id="custom-login-btn"> -->
-                <a href="" id="custom-login-btn" data-ng-click="loginWithKakaoBtn()">
-                     <img width="350px" src="http://mud-kage.kakao.co.kr/14/dn/btqbjxsO6vP/KPiGpdnsubSq3a0PHEGUK1/o.jpg"></img>
-                </a>
-                <br>
-                <a href="" data-ng-click="loginWithNaverBtn()">
-                     <img width="350px" src="./homepage/img/login_btn.png" width="231" height="50" id="NaverIdLoginBTN">
-                </a>
+    <div class="modal-header">
+        <h4 class="modal-title">로그인</h4>
+    </div>
+    <div class="modal-body">
+        <div style="text-align:center">
+            <!-- <a href="javascript:loginWithKakao()" id="custom-login-btn"> -->
+            <a href="" id="custom-login-btn" data-ng-click="loginWithKakaoBtn()">
+                 <img width="350px" src="http://mud-kage.kakao.co.kr/14/dn/btqbjxsO6vP/KPiGpdnsubSq3a0PHEGUK1/o.jpg"></img>
+            </a>
+            <br>
+            <a href="" data-ng-click="loginWithNaverBtn()">
+                 <img width="350px" src="./homepage/img/login_btn.png" width="231" height="50" id="NaverIdLoginBTN">
+            </a>
 
-                <div id="gSignInWrapper" data-ng-click="loginWithGoogleBtn()">
-                    <div id="customBtn" class="customGPlusSignIn">
-                      <span class="icon"></span>
-                      <span class="buttonText">Google</span>
-                    </div>
+            <div id="gSignInWrapper" data-ng-click="loginWithGoogleBtn()">
+                <div id="customBtn" class="customGPlusSignIn">
+                  <span class="icon"></span>
+                  <span class="buttonText">Google</span>
                 </div>
             </div>
-            로그인을 함으로써 셀폰의 <a href="">개인정보취급방침</a>,<a href="">서비스 이용약관</a>,
-            <a href="">위치기반 서비스 이용약관</a>에 동의 하시게 됩니다.
         </div>
-    </div><!-- /.modal-content -->
+	        로그인을 함으로써 셀폰의 <a href="">개인정보취급방침</a>,<a href="">서비스 이용약관</a>,
+	        <a href="">위치기반 서비스 이용약관</a>에 동의 하시게 됩니다.
+	    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" data-dismiss="modal" type="button">취소</button>
+    </div>
 </div><!-- /.modal-dialog -->
 
 <!--

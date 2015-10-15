@@ -61,7 +61,7 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-<!--             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-ng-controller="loginCtrl"> -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-ng-controller="loginModalCtrl">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
@@ -83,7 +83,7 @@
                     </li>
                     <li ng-hide="isLogin">
                         <!-- <a class="page-scroll" href="" data-toggle="modal" data-target="#loginModal">로그인</a> -->
-                        <a href="#" ng-click="clickLoginBtn()">로그인</a>
+                        <a href="" data-ng-click="clickLoginBtn()">로그인</a>
                     </li>
                     <li class="dropdown" ng-show="isLogin">
                       <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{currentUser.user_name}} 님<span class="caret"></span></a>
@@ -212,6 +212,8 @@
     <script src="js/vendors/angular-route.min.js"></script>
     <script src="js/vendors/angular-cookies.min.js"></script>
     <script src="js/vendors/ngDialog.min.js"></script>
+    <script src="js/vendors/ui-bootstrap.min.js"></script>
+
 
 
     <!-- 필터 한국에 맞게 i18n 지정 -->
@@ -223,7 +225,8 @@
 
 	<!-- app.js -->
 	<script src="js/app.js"></script>
-	<script src="js/selphonePostsCtrl.js"></script>	
+	<script src="js/loginModalCtrl.js"></script>	
+	<script src="js/selphonePostsCtrl.js"></script>
 	<script src="js/services/factory.js"></script>	
 	
 

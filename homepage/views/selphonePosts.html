@@ -13,12 +13,12 @@
             <div class="col-sm-4 col-lg-4 col-md-4" data-ng-repeat="selphone_post in selphone_posts">
             <!-- <div class="col-sm-4 col-lg-4 col-md-4"> -->
                 <div class="thumbnail">
-                    <a href="#myModal" data-toggle="modal" ng-click="getSelphonePost(selphone_post)"  style="text-decoration:none">
+                    <a href="" data-toggle="modal" ng-click="getSelphonePost(selphone_post)"  style="text-decoration:none">
 <!--                             <img src="{{selphone_post.post_main_picture}}" alt="..."> -->
                         <div class="caption">
-                            <p>{{selphone_posts.post_title}}</p>
-                            <h4 class="pull-right selphone-blue">{{selphone_posts.sell_price|currency:undefined:0}}</h4>
-                            <h4>{{selphone_posts.TB_PRODUCT.product_name}}</h4>
+                            <p>{{selphone_post.post_title}}</p>
+                            <h4 class="pull-right selphone-blue">{{selphone_post.sell_price|currency:undefined:0}}</h4>
+                            <h4>{{selphone_post.TB_PRODUCT.product_name}}</h4>
                         </div>
                     </a>
                 </div>
